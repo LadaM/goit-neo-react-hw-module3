@@ -1,8 +1,8 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import styles from './ContactForm.module.css';
 
-const ContactForm = () => {
+const ContactForm = ({ addContact }) => {
   const validationSchema = Yup.object({
     name: Yup.string()
       .min(3, 'Name must be at least 3 characters')
@@ -20,8 +20,9 @@ const ContactForm = () => {
     phoneNumber: '',
   };
 
-  const onSubmit = (values) => {
-    console.log('Form data', values);
+  const onSubmit = (values, { resetForm }) => {
+    addContact(values);
+    resetForm();
   };
 
   return (
