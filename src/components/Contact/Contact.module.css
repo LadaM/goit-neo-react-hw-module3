@@ -1,0 +1,37 @@
+.contactCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    min-width: 300px;
+}
+
+.itemsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.button {
+    padding: 8px 16px;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ccc;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
