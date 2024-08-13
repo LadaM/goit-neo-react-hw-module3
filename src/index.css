@@ -59,23 +59,9 @@ textarea {
 /* Set a consistent line-height and inherit font settings: */
 body {
   line-height: 1.5;
-  font-family: Arial, sans-serif; /* Update with your preferred font */
+  font-family: "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* Remove all animations and transitions (optional): */
-*,
-*::before,
-*::after {
-  transition: none !important;
-  animation: none !important;
-}
-
-/* Set a consistent background and color for body: */
-body {
-  background-color: #fedfe1;
-  color: #60373e;
 }
 
 /* Set a consistent border-box sizing for images: */
